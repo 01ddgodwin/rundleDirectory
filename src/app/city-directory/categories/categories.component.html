@@ -1,0 +1,9 @@
+<!-- This will display each seperate category in the array -->
+<app-category-item
+    class="category"
+    *ngFor="let categoryEl of category; let i = index" 
+    [category]="categoryEl" 
+    [index]="i"
+    (categorySelected)="onCategorySelected(categoryEl)">
+</app-category-item>
+

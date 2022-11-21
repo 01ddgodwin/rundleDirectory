@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+$darkGray: #343434;
+$mainFont: 'Montserrat', sans-serif;
+
+body {
+    margin: 0;
+    background-color: $darkGray;
+    font-family: $mainFont;
+}
+
+a {
+    color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$orange: #B87333;
+$darkGray: #343434;
+$darkOrange: #A6682E;
+
+$mainFont: 'Montserrat',
+sans-serif;
+
+.listMapContainer {
+    height: 100%;
+    display: flex;
+
+    .container {
+        text-align: center;
+        width: 20em;
+        overflow: scroll;
+      
+        display: flex;
+        flex-direction: column;
+      
+        h3 {
+          color: white;
+        }
+      
+        a {
+          margin: 1em;
+          background-color: $orange;
+          padding: .5em;
+          border-radius: 10px;
+
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+
+      .map {
+        width: 100%;
+        height: 100%;
+      }
+}
+
+.marker-label {
+    color: white;
+    font-size: 20px;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}

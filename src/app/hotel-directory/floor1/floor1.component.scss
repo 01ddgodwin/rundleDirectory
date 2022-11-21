@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$orange: #B87333;
+$darkGray: #343434;
+$darkOrange: #A6682E;
+
+$mainFont: 'Montserrat',
+sans-serif;
+
+.floor1Container {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+img {
+    height: 60vh;
+    width: auto;
+    border-radius: 8px;
+}
+
+text {
+    font-family: $mainFont;
+}

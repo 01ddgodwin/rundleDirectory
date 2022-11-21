@@ -1,0 +1,19 @@
+.pageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .container {
+        background-color: white;
+        border-radius: 8px;
+        margin: 2em;
+        padding: 1em;
+        width: 40%;
+
+        h1 {
+            text-align: center;
+        }
+    
+    }
+
+}

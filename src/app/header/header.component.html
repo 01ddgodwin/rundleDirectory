@@ -1,0 +1,23 @@
+<nav class="headerNav">
+    <ul>
+        <li routerLink="/">
+            <a routerLink="/">
+            <img class="homeButton" src="../../assets/homeIcon.svg" alt="Home Icon">
+            </a>
+        </li>
+        <li class="logoContainer">
+            <img class="logo" src="../../assets/logo.png" alt="logo">
+        </li>
+        <li class="weather">
+            <div>
+                <h3>{{currentTemp}}°</h3>
+                <p>NOW</p>
+            </div>
+            <div>
+                <h3>{{currentFeelsLike}}°</h3>
+                <p>FEELS LIKE</p>
+            </div>
+            <img src="http://openweathermap.org/img/wn/{{currentWeatherIcon}}@2x.png" alt="Weather Icon">
+        </li>
+    </ul>
+</nav>

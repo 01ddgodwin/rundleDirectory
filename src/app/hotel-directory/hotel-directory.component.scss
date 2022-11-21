@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$orange: #B87333;
+$darkGray: #343434;
+$darkOrange: #A6682E;
+
+$mainFont: 'Montserrat',
+sans-serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.is-active {
+  background-color: #A6682E;
+}
+
+.hotelDirectoryContainer {
+  width: 90vw;
+  height: 80vh;
+  background-color: $orange;
+  margin: 0 auto;
+  margin-top: 3em;
+  border-radius: 50px;
+
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+
+  .hotelDirectoryLinks {
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+
+    a {
+      text-decoration: none;
+      width: 33%;
+      text-align: center;
+      border-radius: 50px;
+    }
+
+    h3 {
+      color: white;
+      font-size: 40px;
+    }
+  }
+}
+
+.active {
+  text-decoration: underline solid $darkOrange 5px !important;
+  text-underline-offset: 1em;
+}
+
+.floorContainer {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10em;
+
+  img {
+    height: 60vh;
+    width: auto;
+    border-radius: 8px;
+  }
+}

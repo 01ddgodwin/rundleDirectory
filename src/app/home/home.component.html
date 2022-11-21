@@ -1,0 +1,17 @@
+<div class="homeContainer">
+  <a routerLink="/hotelDirectory" class="hotelButton">
+    <h3>Hotel Directory</h3>
+  </a>
+  <div class="cityDirectories">
+
+    <a 
+      class="cityButton" 
+      routerLink="{{directory.id}}" 
+      *ngFor="let directory of directories"
+      style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{directory.imgUrl}});">
+      
+      <h3>{{ directory.name }}</h3>
+    </a>
+
+  </div>
+</div>

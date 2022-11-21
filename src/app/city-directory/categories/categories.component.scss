@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$orange: #B87333;
+$darkGray: #343434;
+$darkOrange: #A6682E;
+
+$mainFont: 'Montserrat',
+sans-serif;
+
+.gdContainer {
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+
+  display: flex;
+
+}
+
+.categoriesSection {
+  width: 25em;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: scroll;
+}
+
+.categoriesSection::-webkit-scrollbar {
+  display: none;
+}
+
+.map {
+  width: 80%;
+  height: 100%;
+}
+
+.category {
+  width: 40%;
+  background-color: $orange;
+  height: auto;
+  margin: 1em 0;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+
+  img {
+    width: 7em;
+    height: auto;
+    margin: .5em;
+  }
+}
+
+.results {
+  width: 100%;
+  border-left: black solid 2px;
+}
+
+.results::-webkit-scrollbar {
+    display: none;
+  }

@@ -1,0 +1,17 @@
+<div class="gdContainer">
+  <div class="categoriesSection">
+
+    <!-- This will display each category that is in the array -->
+    <app-categories class="categoriesSection"
+      (categoryWasSelected)="selectedCategory = $event">
+    </app-categories>
+
+  </div>
+
+  <!-- This will the display each business that is in the category selected -->
+  <div class="results">
+    <app-business-list 
+      *ngIf="selectedCategory"
+      [category]="selectedCategory"></app-business-list>
+  </div>
+</div>

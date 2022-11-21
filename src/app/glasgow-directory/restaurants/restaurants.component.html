@@ -1,0 +1,7 @@
+<div class="listMapContainer">
+  <div class="container">
+    <h3>RESTAURANTS</h3>
+    <a *ngFor="let restaurant of restaurants"><img class="restaurantLogo" *ngIf="restaurant.logo!==undefined" src={{restaurant.logo}}>{{ restaurant.id }}. {{ restaurant.name }}</a>
+  </div>
+  <div class="map full" id="map"></div>
+</div>

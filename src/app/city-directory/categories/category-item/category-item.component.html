@@ -1,0 +1,5 @@
+<!-- This will display each category item -->
+<a class="category" [routerLink]="category.id" (click)="onSelectedCategory()">
+  <img src="{{category.image}}" alt="">
+  <h3>{{ category.name }}</h3>
+</a>

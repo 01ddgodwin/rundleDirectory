@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$orange: #B87333;
+$darkGray: #343434;
+$darkOrange: #A6682E;
+
+$mainFont: 'Montserrat',
+sans-serif;
+
+.listMapContainer {
+  height: 100%;
+  display: flex;
+
+  .container {
+    text-align: center;
+    overflow-y: scroll;
+    width: 20em;
+
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      color: white;
+    }
+
+    a {
+      margin: 1em;
+      background-color: $orange;
+      padding: .5em;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .restaurantLogo {
+        width: 5em;
+        height: auto;
+        border-radius: 50px;
+        background-color: white;
+      }
+    }
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .map {
+    width: 80%;
+    height: 100%;
+  }
+}

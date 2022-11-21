@@ -1,0 +1,17 @@
+<div class="hotelDirectoryContainer">
+  <div class="hotelDirectoryLinks">
+
+    <a class="" routerLink="/hotelDirectory/{{floor.id}}" [routerLinkActive]="['is-active']"
+      *ngFor="let floor of floors">
+      <h3>{{ floor.name }}</h3>
+    </a>
+
+  </div>
+
+  <ng-container *ngFor="let floor of floors; let i = index">
+    <div class="floorContainer">
+      <img *ngIf="router.url.includes('floor' + (i + 1))" src='{{floors[i].imgUrl}}' alt="{{floors[i].name}} map">
+    </div>
+  </ng-container>
+
+</div>

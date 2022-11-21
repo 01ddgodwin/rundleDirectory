@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$orange: #B87333;
+$darkGray: #343434;
+
+$mainFont: 'Montserrat', sans-serif;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $darkGray;
+    font-family: $mainFont;
+}
+
+.homeContainer {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .hotelButton {
+        width: 80%;
+        height: 50%;
+        background-color: white;
+        text-align: center;
+        border-radius: 50px;
+        margin: 20px;
+        border: 5px white solid;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 60%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/rundleFront.webp");
+        text-decoration: none;
+
+        h3 {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-size: 60px;
+            color: white;
+            font-family: $mainFont;
+        }
+    }
+
+    .cityDirectories {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        height: 50%;
+        margin: 20px;
+
+
+        .cityButton {
+            width: 50%;
+            background-color: white;
+            text-align: center;
+            border-radius: 50px;
+            margin-right: 10px;
+            border: 5px white solid;
+
+            // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/glasgowImage.png");
+
+            h3 {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                font-size: 50px;
+                font-weight: 700;
+                color: white;
+            }
+        }
+    }
+}

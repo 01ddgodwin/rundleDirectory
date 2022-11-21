@@ -1,0 +1,15 @@
+<!-- This will display the list of businesses in the chosen category -->
+<div class="listMapContainer" >
+    <div class="container" *ngIf="!router.url.includes('map')">
+      <h3>{{ category.name | uppercase }}</h3>
+           
+        <div *ngFor="let business of category?.businesses">
+          <a >
+            <!-- <img *ngIf="business.image!==undefined" src={{business.image}} alt=""> -->
+            {{ business.id + ". " + business.name }}
+          </a>
+        </div>
+      </div>
+    
+    <div class="map full" id="map"></div>
+  </div>
